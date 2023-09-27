@@ -1,0 +1,574 @@
+/* Include your style in here for all pages. 
+Extra style for cssdemo.html can be added in cssdemo.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-colour: #1f242d;
+    --second-bg-color: #323946;
+    --text-color: #fff;
+    --main-color: #0ef;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-colour);
+    color: var(--text-color);
+}
+
+section{
+    padding: 10rem 9% 2rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 9%;
+    background: var(--bg-colour);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 2.5rem;
+    color: var(--text-color);
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: var(--text-color);
+    margin-left: 4rem;
+    transition: .3s;
+}
+
+.navbar a:hover,
+.navbar a.active{
+    color: var(--main-color);
+}
+
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    display: none;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+.content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+
+span{
+    color: var(--main-color);
+}
+
+.content p{
+    font-size: 1.6rem;
+}
+
+.social-media a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 4rem;
+    height: 4rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ease;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.6rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+.btn-secondary{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--second-bg-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    font-size: 1.6rem;
+    color: var(--main-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+    transition: .5s ease;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--second-bg-color);
+}
+
+.heading{
+    text-align: center;
+    font-size: 7rem;
+}
+
+
+.about-content h2{
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3{
+    font-size: 2.6rem;
+}
+
+.about-content p{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+}
+
+@media (max-width: 1200px){
+    html{
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 991px){
+    .header{
+        padding: 2rem 3%;
+    }
+
+    section{
+        padding: 10rem 3% 2rem;
+    }
+
+    .footer{
+        padding: 2rem 3%;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icon{
+        display: block;
+    }
+
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-colour);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+}
+
+.bg-home {
+    background-image: url('./img/rm373batch4-15.jpg');
+    background-size: cover; /* menyesuaikan ukuran gambar dengan ukuran elemen */
+    background-position: center; /* mengatur posisi gambar pada elemen */
+    height: 500px; /* mengatur tinggi elemen */
+    opacity: 0.5;
+ }
+ 
+ @media (min-width: 640px) {
+    .inline-block {
+      display: inline-block;
+    }
+  }
+  
+.subscribe-section {
+    size-adjust: 100px;
+    background-image: url('./img/bg-cta.jpg');
+    background-size: cover;
+    background-position: center;
+}
+  
+@media (min-width: 640px) {
+    .subscribe-section {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 10px;
+    }
+  
+    .subscribe-section .container {
+      max-width: 640px;
+    }
+  }
+  
+/* Styling untuk judul */
+.qualification h2 {
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  /* Styling untuk card */
+  .card {
+    background-color: #323946;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    padding: 20px;
+    position: relative;
+  }
+  
+  .card:before {
+    background-color: #0ef;
+    border-radius: 10px 10px 0 0;
+    content: "";
+    height: 10px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-10px);
+  }
+  
+  .card h3 {
+    color: #f2f2f2;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-top: 0;
+  }
+  
+  .card ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .card ul li {
+    color: #f2f2f2;
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  
+  /* Styling untuk progress bar */
+  .progress-bar {
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    height: 20px;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    background-color: #0ef;
+    color: #ffffff;
+    font-weight: bold;
+    height: 100%;
+    line-height: 20px;
+    text-align: center;
+    transition: width 0.5s ease-in-out;
+    width: 0;
+  }
+  
+  .progress:hover {
+    background-color: #0ef;
+  }
+  
+  .progress-bar:hover .progress {
+    animation: animate-progress 1s forwards;
+  }
+  
+  /* Animasi untuk progress bar */
+  @keyframes animate-progress {
+    from {
+      width: 0%;
+    }
+  
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Styling untuk list */
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .list li {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .list i {
+    color: #0ef;
+    font-size: 24px;
+  }
+  
+  .list span {
+    color: #f2f2f2;
+    font-size: 18px;
+  }
+  
+  /* Styling untuk tombol */
+  .btn-more {
+    background-color: #0ef;
+    border: none;
+    border-radius: 50px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .btn-more:hover {
+    background-color: #0ef;
+  }
+
+/* Styling untuk tabel */
+table {
+    border-collapse: collapse;
+    font-size: 18px;
+    width: 100%;
+  }
+  
+  table th,
+  table td {
+    border: 1px solid #0ef;
+    padding: 10px;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: #6B728E;
+    font-weight: bold;
+  }
+  
+  table tr:nth-child(even) {
+    background-color: #6B728E;
+  }
+  
+  /* Styling untuk tabel pada layar yang lebih kecil */
+  @media (max-width: 767px) {
+    table {
+      font-size: 16px;
+    }
+  
+    table th,
+    table td {
+      font-size: 14px;
+      padding: 8px;
+    }
+  }
+  
+  /* Styling untuk tombol "Lihat Selengkapnya" */
+  .btn-more {
+    background-color: #0ef;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-more:hover {
+    background-color: #0ef;
+  }
+.img1 {
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale();
+  transition: .3s linear;
+  cursor: pointer;
+}
+.img1:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+}
+
+.img2 {
+  --g:#0000 ,#000 .5deg 90deg,#0000 91deg;
+  --m:
+    conic-gradient(from 45deg ,var(--g)) 20px 0  no-repeat,
+    conic-gradient(from 135deg,var(--g)) 0 20px  no-repeat,
+    conic-gradient(from 225deg,var(--g)) -20px 0 no-repeat,
+    conic-gradient(from 315deg,var(--g)) 0 -20px no-repeat;
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  transition: .3s linear;
+  filter: grayscale(.5);
+  cursor: pointer;
+}
+.img2:hover {
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0;
+  filter: grayscale(0);
+}
+
+.img3 {
+  --s: 15px;  /* size of the frame */
+  --b: 2px;   /* border thickness */    
+  --w: 200px; /* width of the image */
+  --c: #7B3B3B;
+  
+  width: var(--w);
+  aspect-ratio: 1;
+  object-fit: cover;
+  padding: calc(2*var(--s));
+  --_g: var(--c) var(--b),#0000 0 calc(100% - var(--b)),var(--c) 0;
+  background:
+    linear-gradient(      var(--_g)) 50%/100% var(--_i,100%) no-repeat,
+    linear-gradient(90deg,var(--_g)) 50%/var(--_i,100%) 100% no-repeat;
+  outline: calc(var(--w)/2) solid #0009;
+  outline-offset: calc(var(--w)/-2 - 2*var(--s));
+  transition: .4s;
+  cursor: pointer;
+}
+.img3:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: calc(var(--s)/-2);
+  --_i: calc(100% - 2*var(--s));
+}
+.img4 {
+  --c: #8A9B0F; /* the border color */
+  --b: 10px;    /* the border thickness*/
+  --g: 5px;     /* the gap on hover */
+  
+  padding: calc(var(--g) + var(--b));
+  --_g: #0000 25%,var(--c) 0;
+  background: 
+    conic-gradient(from 180deg at top    var(--b) right var(--b),var(--_g))
+     var(--_i,200%) 0  /200% var(--_i,var(--b))  no-repeat,
+    conic-gradient(            at bottom var(--b) left  var(--b),var(--_g))
+     0   var(--_i,200%)/var(--_i,var(--b)) 200%  no-repeat;
+  transition: .3s, background-position .3s .3s;
+  cursor: pointer;
+}
+.img4:hover {
+  --_i: 100%;
+  transition: .3s, background-size .3s .3s;
+}
+.placeholder{
+  display:inline-block;
+  width:800px;
+  height:600px;
+  box-sizing:border-box;
+  margin-top:40px;
+  position:relative;
+}
+
+.column, .blind, .blindImg{
+  position:absolute;
+  top:0;
+  height:100%;
+  box-sizing:border-box;
+}
+
+.blind{
+  overflow:hidden;
+}
+
+.blindImg{
+  width:100%;
+  background-size:cover;
+}
+
+.input-field {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.placeholder-label {
+  position: absolute;
+  top: 12px;
+  left: 15px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  color: #999;
+}
+
+.input-field:focus + .placeholder-label,
+.input-field:not(:placeholder-shown) + .placeholder-label {
+  font-size: 12px;
+  top: -6px;
+  left: 10px;
+  color: #666;
+  background-color: #fff;
+  padding: 0 5px;
+  border-radius: 3px;
+}
