@@ -1,7 +1,7 @@
 # Personal-website
 Personal website project freelance with vanilla JS, HTML and CSS
 
-🚀 [Repository Name] - [Brief Description]
+🚀 Personal Website - Freelance project
 
 Welcome to Personal Website Template! This is a Freelance Porject aimed at Customer needs. The project is built using Vanilla JS, CSS, HTML, and we're excited to share what we've accomplished.
 
